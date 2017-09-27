@@ -1,0 +1,4 @@
+FROM node:wheezy
+RUN npm install -g ethereumjs-testrpc
+COPY . /testrpc/
+WORKDIR /testrpc

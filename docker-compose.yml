@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  testrpc:
+    extends:
+      file: testrpc.yml
+      service: testrpc
+  gnosis_management:
+    depends_on:
+      - testrpc
+    extends:
+      file: gnosis_management.yml
+      service: gnosis_management

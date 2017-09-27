@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  gnosis_management:
+    build:
+      context: .
+      dockerfile: ManagementDockerfile
+    working_dir: /gnosis-management
+    command: sh gnosis_management_setup.sh
+    ports:
+      - "8000:8000"
+      - "5000:5000"

@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  testrpc:
+    build:
+      context: .
+      dockerfile: TestRPCDockerfile
+    working_dir: /testrpc
+    command: sh testrpc_setup.sh
+    ports:
+      - "8545:8545"
