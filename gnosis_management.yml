@@ -9,3 +9,5 @@ services:
     command: sh gnosis_management_setup.sh
     ports:
       - "5000:5000"
+      - "8545"
+      - "8000"

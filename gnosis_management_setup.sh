@@ -1,9 +1,9 @@
 #!/bin/sh
-sleep 5
+sleep 10
 echo "[GnosisDevKit] Setting Management up..."
 cd node_modules/@gnosis.pm/gnosis-core-contracts/
 echo "[GnosisDevKit] Migrating contracts..."
-truffle migrate
+curl http://testrpc:8545 -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c6f20776f726c64"],"id":64}'
+truffle migrate --network development
 echo "[GnosisDevKit] Starting frontend..."
 cd ../../ && npm run start
-# echo "[GnosisDevKit] GnosisManagement up and running. Listening at port 5000"
