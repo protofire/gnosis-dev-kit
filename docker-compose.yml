@@ -11,3 +11,48 @@ services:
     extends:
       file: gnosis_management.yml
       service: gnosis_management
+  rabbit:
+    hostname: rabbit
+    image: rabbitmq:latest
+    environment:
+      - RABBITMQ_DEFAULT_USER=gnosisdb
+      - RABBITMQ_DEFAULT_PASS=gnosisdb
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    depends_on:
+      - gnosis_management
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+  gnosisdb_web:
+    build:
+      context: .
+      dockerfile: GnosisDBDockerfile
+    env_file:
+      - .env
+    links:
+      - db
+    depends_on:
+      - db
+    working_dir: /gnosisdb/gnosisdb
+    command: sh ../run_django.sh
+    ports:
+      - "8000:8000"
+      - "27017"
+      - "5432"
+  gnosisdb_worker:
+    build:
+      context: .
+      dockerfile: CeleryDockerfile
+    command: sh run_celery.sh
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    links:
+      - rabbit
+    depends_on:
+      - db
+      - rabbit

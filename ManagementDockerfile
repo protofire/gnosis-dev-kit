@@ -3,6 +3,5 @@ RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/gnosis/gnosis-management.git
 RUN cd gnosis-management && npm install
 RUN npm install -g truffle truffle-contract
-RUN touch truffle-local.js && echo "exports = {}" > truffle-local.js
-COPY . /gnosis-management/
+ADD gnosis_management_setup.sh /gnosis-management/gnosis_management_setup.sh
 WORKDIR /gnosis-management
