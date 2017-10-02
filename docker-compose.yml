@@ -44,6 +44,7 @@ services:
     command: sh ../run_django.sh
     ports:
       - "8000:8000"
+      - "8888:8888"
       - "27017"
       - "5432"
   gnosisdb_worker:

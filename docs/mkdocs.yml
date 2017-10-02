@@ -1,0 +1,15 @@
+site_name: Gnosis Development Kit
+repo_url: https://github.com/gnosis/gnosis-management
+site_description: Gnosis Development Kit Documentation
+theme: readthedocs
+extra_css: [extra.css]
+pages:
+    - Introduction: index.md
+    - API Reference:
+        - 'REST API': 'reference/api.md'
+        - 'Management': 'reference/management.md'
+    - Getting Started:
+        - 'Installation': 'getting-started/installation.md'
+        - 'Events Daemon': 'getting-started/celery.md'
+        - 'Settings': 'getting-started/settings.md'
+        - 'Multisig Wallet settings': 'getting-started/multisig.md'
