@@ -5,11 +5,8 @@ theme: readthedocs
 extra_css: [extra.css]
 pages:
     - Introduction: index.md
-    - API Reference:
-        - 'REST API': 'reference/api.md'
-        - 'Management': 'reference/management.md'
-    - Getting Started:
-        - 'Installation': 'getting-started/installation.md'
-        - 'Events Daemon': 'getting-started/celery.md'
-        - 'Settings': 'getting-started/settings.md'
-        - 'Multisig Wallet settings': 'getting-started/multisig.md'
+    - Core Components:
+        - 'GnosisDB': 'core-components/gnosisdb.md'
+        - 'GnosisJS': 'core-components/gnosisjs.md'
+        - 'Gnosis contracts': 'core-components/gnosis_contracts.md'
+        - 'Gnosis management interface': 'core-components/management.md'
