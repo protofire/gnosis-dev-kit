@@ -11,6 +11,5 @@ ADD run_django.sh /gnosisdb/run_django.sh
 ADD run_celery.sh /gnosisdb/run_celery.sh
 
 RUN cp /gnosisdb/requirements.txt /tmp/requirements.txt
-RUN pip install -qr /tmp/requirements.txt && pip install mkdocs
-ADD docs /gnosisdb/docs
+RUN pip install -qr /tmp/requirements.txt
 WORKDIR /gnosisdb

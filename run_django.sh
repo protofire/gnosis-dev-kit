@@ -1,7 +1,5 @@
 #!/bin/sh
 sleep 5
-echo "==> Starting documentation <=="
-cd ../docs && mkdocs serve --dev-addr=0.0.0.0:8888&
 cd gnosisdb
 echo "==> Serving documentation on http://localhost:8888 <=="
 echo "==> Migrating Django <=="

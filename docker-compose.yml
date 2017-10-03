@@ -52,7 +52,6 @@ services:
     command: sh ../run_django.sh
     ports:
       - "8000:8000"
-      - "8888:8888"
       - "27017"
       - "5432"
   gnosisdb_worker:
@@ -69,3 +68,10 @@ services:
     depends_on:
       - db
       - rabbit
+  documentation:
+    build:
+      context: .
+      dockerfile: DocsDockerfile
+    command: sh run_docs.sh
+    ports:
+      - "8888:8888"
