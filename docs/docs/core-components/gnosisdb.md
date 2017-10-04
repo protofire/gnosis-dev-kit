@@ -14,3 +14,16 @@ Gnosis requires to store information about future events resolved by oracles. Th
 Github
 -----------
 Check out our Github repository: [link](https://github.com/gnosis/gnosisdb/)
+
+Admin area
+-----------
+The Development Kit will automatically create an admin user for you.
+To access to the admin area, open your favourite browser and go to:
+`http://localhost:8000/admin`
+
+and provide the following credentials:
+
+```
+username: admin
+password: admin
+```

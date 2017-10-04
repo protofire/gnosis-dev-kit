@@ -1,7 +1,7 @@
 FROM node:wheezy
 RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/gnosis/gnosis-management.git
-RUN cd gnosis-management && npm install && npm install truffle-contract
+RUN cd gnosis-management && git pull origin master && npm install && npm install truffle-contract
 RUN npm install -g truffle
 ADD gnosis_management_setup.sh /gnosis-management/gnosis_management_setup.sh
 ADD truffle.js /gnosis-management/node_modules/\@gnosis.pm/gnosis-core-contracts/truffle.js
