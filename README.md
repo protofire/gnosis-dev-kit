@@ -1,7 +1,9 @@
 # gnosis-dev-kit
 
-## Prerequisites
-In order to get started with Gnosis Dev Kit you need to have Docker and Docker-Compose installed.<br/>
+[![Join the chat at https://gitter.im/gnosis/gnosis-dev-kit](https://badges.gitter.im/gnosis/gnosis-dev-kit.svg)](https://gitter.im/gnosis/gnosis-dev-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## Requirements
+In order to get started with Gnosis Dev Kit you need to have Docker and Docker-Compose installed on your system.<br/>
 Please refer to Docker-Compose documentation: https://docs.docker.com/compose/install/#install-compose
 
 ## Get started
@@ -20,5 +22,6 @@ Gnosis Dev Kit is composed by the following services:
 - GnosisJS
 - GnosisDB (http://localhost:8000/admin)
 - Gnosis Management Interface (http://localhost:5000)
+- Documentation (http://localhost:8888)
 
 
