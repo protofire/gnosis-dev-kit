@@ -25,3 +25,5 @@ Gnosis Dev Kit is composed by the following services:
 - Documentation (http://localhost:8888)
 
 
+In case you're willing to remove all containers, open your terminal an type:<br/>
+```docker-compose down```
