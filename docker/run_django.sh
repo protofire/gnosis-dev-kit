@@ -1,7 +1,6 @@
 #!/bin/sh
 sleep 5
 cd gnosisdb
-echo "==> Serving documentation on http://localhost:8888 <=="
 echo "==> Migrating Django <=="
 python manage.py migrate
 echo "==> Creating super user <== "

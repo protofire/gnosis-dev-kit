@@ -1,6 +1,6 @@
 FROM jbenet/go-ipfs:latest
 USER ${user}
-COPY ./start_ipfs_cors.sh /usr/local/bin/start_ipfs_cors
+COPY docker/start_ipfs_cors.sh /usr/local/bin/start_ipfs_cors
 USER root
 RUN chmod +x /usr/local/bin/start_ipfs_cors
 USER ${user}

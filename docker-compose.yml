@@ -3,13 +3,13 @@ version: '2'
 services:
   testrpc:
     extends:
-      file: testrpc.yml
+      file: docker/testrpc.yml
       service: testrpc
   gnosis_management:
     depends_on:
       - testrpc
     extends:
-      file: gnosis_management.yml
+      file: docker/gnosis_management.yml
       service: gnosis_management
     links:
       - testrpc
@@ -18,7 +18,7 @@ services:
     hostname: ipfs
     build:
       context: .
-      dockerfile: IPFSDockerfile
+      dockerfile: docker/IPFSDockerfile
     ports:
       - "4001:4001"
       - "5001:5001"
@@ -40,9 +40,9 @@ services:
   gnosisdb_web:
     build:
       context: .
-      dockerfile: GnosisDBDockerfile
+      dockerfile: docker/GnosisDBDockerfile
     env_file:
-      - .env
+      - docker/.env
     links:
       - db
       - testrpc
@@ -57,10 +57,10 @@ services:
   gnosisdb_worker:
     build:
       context: .
-      dockerfile: CeleryDockerfile
+      dockerfile: docker/CeleryDockerfile
     command: sh run_celery.sh
     env_file:
-      - .env
+      - docker/.env
     volumes:
       - .:/app
     links:
@@ -71,7 +71,7 @@ services:
   documentation:
     build:
       context: .
-      dockerfile: DocsDockerfile
+      dockerfile: docker/DocsDockerfile
     command: sh run_docs.sh
     ports:
       - "8888:8888"
