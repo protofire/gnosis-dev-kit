@@ -1,5 +1,7 @@
 # gnosis-dev-kit
 
+[![Join the chat at https://gitter.im/gnosis/gnosis-dev-kit](https://badges.gitter.im/gnosis/gnosis-dev-kit.svg)](https://gitter.im/gnosis/gnosis-dev-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Prerequisites
 In order to get started with Gnosis Dev Kit you need to have Docker and Docker-Compose installed.<br/>
 Please refer to Docker-Compose documentation: https://docs.docker.com/compose/install/#install-compose
