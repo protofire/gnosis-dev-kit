@@ -20,12 +20,50 @@ li {
   font-size: 16px;
 }
 
+a:visited {
+  color: #06a2c4;
+}
+
+.wy-menu-vertical a {
+  color: #05a6c4;
+}
+
+.wy-menu-vertical li ul li a {
+  color: #05a6c4;
+}
+
+.wy-menu-vertical span {
+  color: #ffffff;
+}
+
+.wy-nav-side {
+  background-color: #192b39;
+}
+
 .wy-side-nav-search {
-  background-color: #2BBFA7;
+  /*background-color: #2BBFA7;*/
+    background-color: #192b39;
 }
 
 .wy-side-nav-search input[type=text] {
   border-color: #1E8776;
+}
+
+.wy-menu-vertical a:hover {
+  background-color: #05a6c4;
+  color: #ffffff;
+}
+
+.wy-menu-vertical li.current>a {
+  color: #192b39;
+}
+
+.rst-versions {
+  background: #192b39;
+}
+
+.rst-versions .rst-current-version {
+  background: #192b39;
 }
 
 .section {

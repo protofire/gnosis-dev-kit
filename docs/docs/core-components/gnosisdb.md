@@ -8,7 +8,6 @@ As of today, the only way to query the blockchain via [JSON RPC](https://github.
 
 Use cases
 -----------
-Gnosis
 Gnosis requires to store information about future events resolved by oracles. This information includes a human readable, unambiguous description of the event, a resolution date and the event outcomes. Storing this information on Ethereum is too costly but could be added to [IPFS](https://ipfs.io/). A typical Gnosis use case is a sport-betting market. This application requires thousands of event descriptions, which can change on a hourly basis. To offer a decent user experience with IPFS, every user would have to download all event descriptions to search and navigate all available events. A lot of data would have to be exchanged with every potential change to any description causing delayed execution and high traffic. In addition, it requires a lot more implementation on the client to query this data locally.
 
 Github
@@ -27,3 +26,15 @@ and provide the following credentials:
 username: admin
 password: admin
 ```
+
+REST API
+-----------
+GnosisDB comes with a handy RESTful API. Open your Web browser and connect to http://localhost:8000. You will get all the relevant API endpoints and their input/return data.
+
+List of main endpoints:
+
+* api/markets
+* api/centralized-oracles
+* api/events
+* api/account
+* api/factories

@@ -1,5 +1,5 @@
 site_name: Gnosis Development Kit
-repo_url: https://github.com/gnosis/gnosis-management
+repo_url: https://github.com/gnosis/gnosis-dev-kit
 site_description: Gnosis Development Kit Documentation
 theme: readthedocs
 extra_css: [extra.css]
