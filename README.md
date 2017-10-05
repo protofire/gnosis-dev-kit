@@ -32,4 +32,6 @@ Gnosis Dev Kit is composed by the following services:
 * List of all existing containers (not only running):<br/>
 ```docker ps -a```
 * Attach to a running container<br/>
-```docker exec -i -t <mycontainer> /bin/bash```
+```docker exec -i -t <mycontainer> /bin/bash```<br/>
+Or using docker-compose<br/>
+```docker-compose run gnosis_management /bin/bash```
