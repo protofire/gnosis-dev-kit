@@ -24,6 +24,12 @@ Gnosis Dev Kit is composed by the following services:
 - Gnosis Management Interface (http://localhost:5000)
 - Documentation (http://localhost:8888)
 
-
-In case you're willing to remove all containers, open your terminal and type:<br/>
-```docker-compose down```
+## Useful Docker commands
+* Re-build the project, also download all libs again:<br/>
+```docker-compose build --no-cache```
+* Remove all containers:<br/>
+```docker-compose down --rmi```
+* List of all existing containers (not only running):<br/>
+```docker ps -a```
+* Attach to a running container<br/>
+```docker exec -i -t <mycontainer> /bin/bash```
