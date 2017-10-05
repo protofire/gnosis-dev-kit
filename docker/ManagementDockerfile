@@ -5,4 +5,5 @@ RUN cd gnosis-management && git pull origin master && npm install && npm install
 RUN npm install -g truffle
 ADD gnosis_management_setup.sh /gnosis-management/gnosis_management_setup.sh
 ADD truffle.js /gnosis-management/node_modules/\@gnosis.pm/gnosis-core-contracts/truffle.js
+ADD node/create_market.js /gnosis-management
 WORKDIR /gnosis-management
