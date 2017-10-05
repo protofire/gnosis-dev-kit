@@ -4,7 +4,12 @@
 
 ## Requirements
 In order to get started with Gnosis Dev Kit you need to have Docker and Docker-Compose installed on your system.<br/>
-Please refer to Docker-Compose documentation: https://docs.docker.com/compose/install/#install-compose
+Please refer to Docker-Compose documentation: https://docs.docker.com/compose/install/#install-compose.
+
+Also you need to satisfy the following SW requirements:
+
+* Node >= 7.0
+* NPM >= 5.0
 
 ## Get started
 Clone Gnosis-Dev-Kit repository:<br/>
