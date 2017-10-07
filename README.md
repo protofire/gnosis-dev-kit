@@ -32,7 +32,7 @@ Gnosis Dev Kit is composed by the following services:
 ## First steps
 Once the dev-kit is up and running, the gnosis-core-contracts directory will be filled with the new deployed contracts on the TestRPC blockchain.
 
-Go into **sampleDApp** and install the required npm libraries and finally execute ```node createMarket.js```.
+Go into **sampleDApp** and install the required npm libraries by providing ```npm install``` and finally execute ```node createMarket.js```.
 Take your time and inspect the script: it contains the code to create a new market with Gnosis :)
 
 ## Useful Docker commands
