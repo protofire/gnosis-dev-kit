@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: ManagementDockerfile
+    image: gnosispm/gnosis-management
     working_dir: /gnosis-management
     command: sh gnosis_management_setup.sh
     ports:
