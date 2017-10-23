@@ -43,6 +43,7 @@ services:
     build:
       context: .
       dockerfile: docker/GnosisDBDockerfile
+    image: gnosispm/gnosisdb
     env_file:
       - docker/.env
     links:
@@ -60,6 +61,7 @@ services:
     build:
       context: .
       dockerfile: docker/CeleryDockerfile
+    image: gnosispm/gnosisdb
     command: sh run_celery.sh
     env_file:
       - docker/.env
