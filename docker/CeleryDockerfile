@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y -q curl python-dev \
 RUN git clone https://github.com/gnosis/gnosisdb.git
 RUN mkdir -p /root/var/run/celery
 
+RUN pip install --upgrade pip
+RUN pip install pyOpenSSL cryptography idna certifi
+
 ADD docker/run_celery.sh /gnosisdb/run_celery.sh
 
 RUN cp /gnosisdb/requirements.txt /tmp/requirements.txt
