@@ -26,7 +26,7 @@ services:
       - "5001:5001"
   rabbit:
     hostname: rabbit
-    image: rabbitmq:latest
+    image: rabbitmq:management
     environment:
       - RABBITMQ_DEFAULT_USER=gnosisdb
       - RABBITMQ_DEFAULT_PASS=gnosisdb
@@ -51,8 +51,7 @@ services:
       - testrpc
     depends_on:
       - db
-    working_dir: /gnosisdb/gnosisdb
-    command: sh ../run_django.sh
+    command: sh run_django.sh
     ports:
       - "8000:8000"
       - "27017"

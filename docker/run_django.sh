@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 sleep 5
 cd gnosisdb
 echo "==> Migrating Django <=="

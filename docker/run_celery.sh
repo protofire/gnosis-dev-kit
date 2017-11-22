@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 sleep 5
 
 until psql -h "db" -U "postgres" -c '\l'; do
